@@ -45,7 +45,7 @@
 <meta http-equiv="cleartype" content="on">
 
 <!-- Load Modernizr -->
-<script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+<!-- <script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script> -->
 
 
 
@@ -56,7 +56,6 @@
         <span class="main-header-image">
             <a href="/"><img src="/images/header/header-pic1.jpg"></a>
         </span>
-        <div> Chester Hongyu Yang</div>
     </center>
 
     <!-- NAVIGATION -->
@@ -65,8 +64,8 @@
         <span class="navigation-bar">
             <a href="/">HOME</a>
             <a href="/projects/">PROJECTS</a>
-            <a href="/archives/">ARCHIVE</a>
-            <a href="/tags/">TAGS</a>
+<!--             <a href="/archives/">ARCHIVE</a>
+            <a href="/tags/">TAGS</a> -->
             <a href="/about/">ABOUT</a>
             <!-- <a href="/feed.xml">RSS</a> -->
         </span>
@@ -79,50 +78,163 @@
 
     <!-- MAIN -->
     <div id="main" role="main">
+      <article>
+    <h1 class="entry-title">
+        <a>Projects</a>
+    </h1>
+    <!-- <hr> -->
+
+
+    
+    
+
+    
+    <article>
+        <h1 style="color:black;" class="entry-title">2017</h1>
       
+        <ul>
+        
+
+        <li class="entry-title"><a href="http://localhost:4000/work/experience/2017-10-14/dashboard-for-mangata.html" title="Dashboard for Mangata">Dashboard for Mangata</a></li>
+
+        
+        </ul>
+        
+    </article>
+    
+
+
+</article>
+
+
 
 
 
 <article>
-    <h1 class="entry-title">
-        <a>Projects</a>
-    </h1>
+    <!-- POST TITLE -->
+    <header>
+        <h1 class="entry-title">
+            <a href="http://localhost:4000/work/experience/2017-10-14/dashboard-for-mangata.html" rel="bookmark" title="Dashboard for Mangata" itemprop="url">Dashboard for Mangata</a>
+        </h1>
+    </header>
     
+    <!-- POST CONTENT -->
+    <div class="entry-content">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="_/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Software Engineer Internship</th>
+      <th style="text-align: center">Mangata Inc.</th>
+      <th style="text-align: right">Jun. 2017 – Aug. 2017</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Referenced By:</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>CEO Andrei Papancea: <a href="mailto:andrei@mangata.io">andrei@mangata.io</a></li>
+  <li>Co-Founder Vlad Papancea: <a href="mailto:vlad@mangata.io">vlad@mangata.io</a></li>
+</ul>
+
+<h4 id="worked-on-a-team-to-build-a-platform-to-manage-products-orders-and-gift-sending-policies-build-the-frontend-backend-and-databases-for-the-platform">Worked on a team to build a platform to manage products, orders and gift sending policies. Build the FrontEnd, BackEnd and Databases for the platform.</h4>
+
+<h3 id="frontend-framework">Frontend Framework:</h3>
+<ul>
+  <li>Structured Components, Services and Routing Module for dashboard platform using <strong>AngularJS 2</strong>, hosting on S3.</li>
+  <li>Implemented web design with <strong><em>HTML, CSS and Bootstrap</em></strong> for different components with proper data binding.</li>
+</ul>
+
+<p>The orders page:
+<img src="/images/dashboard-mangata/orders.png" alt="" />
+The products page: 
+<img src="/images/dashboard-mangata/products.png" alt="" /></p>
+
+<h3 id="backend-aws-services">Backend AWS Services:</h3>
+<ul>
+  <li>Created <strong>DynamoDB</strong> databases for products and orders and <strong>Elasticsearch</strong> endpoint for search service.</li>
+  <li>Implemented <strong>Lambda</strong> functions: Create/Read/Update/Delete operations on databases; Post/Delete(DBs triggered) and Filter operations on Elasticsearch.</li>
+  <li>Designed <strong>RESTful</strong> APIs under designed parameter and data requirements on <strong>API Gateway</strong>, connected APIs with corresponding Lambda functions, and integrated API Gateway SDK to AngularJS.</li>
+</ul>
+
+<p>The APIs that were documented on Swagger.io and implemented on API Gateway:</p>
+<div style="text-align:center;">
+	<img src="/images/dashboard-mangata/APIs.png" style="width:70%;display:inline-block;" />
+</div>
+
+<p>The AWS service structure: 
+<img src="/images/dashboard-mangata/diagram.png" /></p>
+
+<script src="/assets/js/jquery.photoset-grid.js"></script>
+
+<script type="text/javascript">
+    $('.photoset-grid-custom').photosetGrid({
+    // Set the gutter between columns and rows
+    gutter: '5px',
+  
+    // Wrap the images in links
+    highresLinks: true,
+  
+    // Asign a common rel attribute
+    rel: 'print-gallery',
+
+    onInit: function(){},
+    
+    onComplete: function(){
+        // Show the grid after it renders
+        $('.photoset-grid-custom').attr('style', '');
+    }
+});
+</script>
+
+
+    </div>
+    
+    <!--- DIVIDING LINE -->
     <hr>
     
-    <ul class="entry-meta inline-list">
+    <!-- POST TAGS -->
+    <div class="inline-tags">
+        <span>
         
-            
-  	             <li><a href="#code" class="tag"><span class="term">code </span> <span class="count">(1)</span></a></li>
-            
-        
-            
-  	             <li><a href="#highlighting" class="tag"><span class="term">highlighting </span> <span class="count">(1)</span></a></li>
-            
-        
-            
-  	             <li><a href="#intro" class="tag"><span class="term">intro </span> <span class="count">(1)</span></a></li>
-            
-        
-            
-  	             <li><a href="#readability" class="tag"><span class="term">readability </span> <span class="count">(1)</span></a></li>
-            
-        
-            
-  	             <li><a href="#sample post" class="tag"><span class="term">sample post </span> <span class="count">(5)</span></a></li>
-            
-        
-            
-  	             <li><a href="#test" class="tag"><span class="term">test </span> <span class="count">(1)</span></a></li>
-            
-        
-            
-  	             <li><a href="#video" class="tag"><span class="term">video </span> <span class="count">(1)</span></a></li>
-            
-        
-        
-    </ul>
+        </span>
+    </div>
+    
+    <br>
+    
+    <!-- POST DATE -->
+    <div class="post-date">
+        <span class="entry-date date published updated">
+            <time datetime="2017-10-14T00:00:00-04:00">
+                <a href="http://localhost:4000/work/experience/2017-10-14/dashboard-for-mangata.html">October 14, 2017</a>
+            </time>
+        </span>
+    </div>
+    
 </article>
+
+
+<div class="pagination">
+<center>
+<div class="pagination">
+    
+</div>
+</center>
+    </div>
     </div>       
 </body>
 

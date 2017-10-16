@@ -22,20 +22,10 @@ date-string: OCTOBER 14, 2017
 * Implemented web design with ***HTML, CSS and Bootstrap*** for different components with proper data binding. 
 
 The orders page:
-
 ![](/images/dashboard-mangata/orders.png)
-
 The products page: 
-
 ![](/images/dashboard-mangata/products.png)
 
-
-<!-- <center>
-    <div class="photoset-grid-custom" data-layout="22213">
-        <img src="/images/dashboard-mangata/orders.png">
-        <img src="/images/dashboard-mangata/products.png">
-    </div>
-</center> -->
 
 ### Backend AWS Services: 
 * Created **DynamoDB** databases for products and orders and **Elasticsearch** endpoint for search service. 
@@ -43,24 +33,14 @@ The products page:
 * Designed **RESTful** APIs under designed parameter and data requirements on **API Gateway**, connected APIs with corresponding Lambda functions, and integrated API Gateway SDK to AngularJS. 
 
 The APIs that were documented on Swagger.io and implemented on API Gateway:
-<!-- ![](./images/dashboard-mangata/APIs.png) -->
 <div style="text-align:center;">
-	<img src="./images/dashboard-mangata/APIs.png" style="width:70%;display:inline-block;">
+	<img src="/images/dashboard-mangata/APIs.png" style="width:70%;display:inline-block;">
 </div>
-<!-- ![](./pic/pic1s.png =250x) -->
 
 The AWS service structure: 
-<!-- ![](/images/dashboard-mangata/diagram.png) -->
 <img src="/images/dashboard-mangata/diagram.png">
-<!-- <center>
-    <div class="photoset-grid-custom" data-layout="22213">
-    	<img src="/images/dashboard-mangata/diagram.png">
-        <img src="/images/dashboard-mangata/APIs.png">
-    </div>
-</center> -->
 
 <script src="/assets/js/jquery.photoset-grid.js"></script>
-
 <script type="text/javascript">
     $('.photoset-grid-custom').photosetGrid({
     // Set the gutter between columns and rows
