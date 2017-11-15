@@ -1,0 +1,201 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+<head>
+    <meta charset="utf-8">
+<title>PostNearby &#8211; Chester's Homepage</title>
+<meta name="description" content="Something...">
+<meta name="keywords" content="">
+
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+
+
+
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PostNearby">
+<meta property="og:description" content="Something...">
+<meta property="og:url" content="http://localhost:4000/2017-01-01/postnearby.html">
+<meta property="og:site_name" content="Chester's Homepage">
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/2017-01-01/postnearby.html">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Chester's Homepage Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<!-- Webfonts -->
+<link href="//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<!-- <script src="http://localhost:4000/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script> -->
+
+
+
+
+
+    <!-- HEADER IMAGE -->
+    <center>
+        <span class="main-header-image">
+            <a href="/"><img src="/images/header/header-pic1.jpg"></a>
+        </span>
+    </center>
+
+    <!-- NAVIGATION -->
+    <br><br>
+    <center>
+        <span class="navigation-bar">
+            <a href="/">HOME</a>
+            <a href="/projects/">PROJECTS</a>
+<!--             <a href="/archives/">ARCHIVE</a>
+            <a href="/tags/">TAGS</a> -->
+            <a href="/about/">ABOUT</a>
+            <!-- <a href="/feed.xml">RSS</a> -->
+        </span>
+    </center> 
+</head>
+
+<!-- BODY -->
+<body id="post-index">
+    <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+    
+    <div id="main" role="main">
+        <article class="hentry">
+            
+            <!-- MAIN -->
+            <h1 class="entry-title">
+                <a>PostNearby</a>
+            </h1>
+                
+            <!-- POST CONTENT -->
+            <div class="entry-content">
+                <style>
+div .postnearby {
+	width:35%;
+	display:inline-block;
+	margin:30px;
+	border:1px solid grey;
+	margin-top: 0px;
+}
+</style>
+
+<p><strong>PostNeaby is an iOS app where you can post anything on the system and also search posts around you.</strong></p>
+
+<ul>
+  <li>Built an <strong>iOS app</strong> for users to send posts in their location and search other user’s posts on the map.</li>
+</ul>
+
+<p>In the home page, the user can scan the posts from others’ posts around. Click one record, the user can see the detail of that post. The user can also do post from home page. In the explore page, the user can search posts around in the map and have the access to see the detail if he/she hit the markers on the map.</p>
+<div style="text-align:center;">
+	<img class="postnearby" src="/images/postnearby/home.png" />
+	<img class="postnearby" src="/images/postnearby/search2.png" />
+	<img class="postnearby" src="/images/postnearby/post.png" />
+	<img class="postnearby" src="/images/postnearby/detail.png" />
+</div>
+
+<ul>
+  <li>Created a backend server using <strong>Go</strong> in scalable <strong>Google App Engine</strong> to handle user’s post/search operations.</li>
+</ul>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">func</span> <span class="nf">handlerSearch</span>(w <span class="nb">http.ResponseWriter</span>, r <span class="nb">*http.Request</span>) {}
+<span class="k">func</span> <span class="nf">handlerPost</span>(w <span class="nb">http.ResponseWriter</span>, r <span class="nb">*http.Request</span>) {}
+<span class="k">func</span> <span class="nf">main</span>() {
+	<span class="nb">http.HandleFunc</span>("/post", handlerPost)
+	<span class="nb">http.HandleFunc</span>("/search", handlerSearch)
+	<span class="nb">log.Fatal</span>(http.ListenAndServe(":8080", nil))
+}
+</code></pre></div></div>
+
+<ul>
+  <li>Implemented the geo-search functionality through the service of a <strong>Elastic Search</strong> endpoint in EC2.</li>
+</ul>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+//search function:
+<span class="m">searchResult</span>, err := <span class="nb">es_client</span>.<span class="k">Search</span>().
+	<span class="nb">Index</span>(INDEX).
+	<span class="nb">Query</span>(query).
+	<span class="nb">Pretty</span>(true).
+	<span class="nb">Do</span>()
+
+//insert function:
+<span class="m">_</span>, err = <span class="nb">es_client</span>.Index().
+	<span class="nb">Index</span>(INDEX).
+	<span class="nb">Type</span>(TYPE).
+	<span class="nb">Id</span>(id).
+	<span class="nb">BodyJson</span>(p).
+	<span class="nb">Refresh</span>(true).
+	<span class="nb">Do</span>()
+</code></pre></div></div>
+<ul>
+  <li>Utilized <strong>Google Dataflow</strong> to dump user posts from <strong>BigTable</strong> to <strong>BigQuery</strong> for content analysis.</li>
+</ul>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="m">Pipeline</span> p = Pipeline.<span class="k">create</span>(options);
+
+<span class="m">PCollection</span>&lt;Result&gt; btRows = p.<span class="k">apply</span>(Read.from(CloudBigtableIO.read(config)));
+
+<span class="m">PCollection</span>&lt;TableRow&gt; bqRows = btRows.<span class="k">apply</span>(ParDo.of());
+
+bqRows.<span class="k">apply</span>(BigQueryIO.Write());
+
+p.<span class="k">run</span>();
+</code></pre></div></div>
+
+<div style="text-align:center;">
+	<img class="postnearby" src="/images/postnearby/dataflow.png" />
+</div>
+
+
+            </div>  
+
+            <!--- DIVIDING LINE -->
+            <hr>
+    
+            <!-- POST TAGS -->
+            <div class="inline-tags">
+                <span>
+                    
+                </span>
+            </div>
+          
+            <br>
+            
+            <!-- POST DATE -->
+            <div class="post-date">
+                November 13, 2017 -->
+            </div>
+        </article>
+    </div>
+</body>
+    
+<!-- FOOTER -->  
+<footer>  
+    <div class="footer-wrapper">
+        <footer role="contentinfo">
+            <span>
+    &copy; 2017 Chester Hongyu Yang
+
+<!--     <br>Powered by <a target="_blank" href="http://jekyllrb.com" rel="nofollow">Jekyll</a> using the <a target="_blank" href="https://github.com/nathanrooy/Clean-and-Simple-Jekyll-Theme">Clean+Simple</a> theme. -->
+</span>
+
+        </footer>
+    </div>   
+</footer>  
+</html>

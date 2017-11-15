@@ -1,8 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-18T00:25:38-04:00</updated><id>http://localhost:4000/</id><title type="html">Chester’s Homepage</title><subtitle>Something...</subtitle><entry><title type="html">Dashboard for Mangata</title><link href="http://localhost:4000/work/experience/2017-10-14/dashboard-for-mangata.html" rel="alternate" type="text/html" title="Dashboard for Mangata" /><published>2017-10-14T00:00:00-04:00</published><updated>2017-10-14T00:00:00-04:00</updated><id>http://localhost:4000/work/experience/2017-10-14/dashboard-for-mangata</id><content type="html" xml:base="http://localhost:4000/work/experience/2017-10-14/dashboard-for-mangata.html">&lt;script src=&quot;//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
-
-&lt;script&gt;window.jQuery || document.write('&lt;script src=&quot;_/js/libs/jquery-1.9.1.min.js&quot;&gt;&lt;\/script&gt;')&lt;/script&gt;
-
-&lt;table&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-15T02:22:14-05:00</updated><id>http://localhost:4000/</id><title type="html">Chester’s Homepage</title><subtitle>Something...</subtitle><entry><title type="html">Dashboard for Mangata</title><link href="http://localhost:4000/2017-01-04/dashboard.html" rel="alternate" type="text/html" title="Dashboard for Mangata" /><published>2017-01-04T00:00:00-05:00</published><updated>2017-01-04T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-04/dashboard</id><content type="html" xml:base="http://localhost:4000/2017-01-04/dashboard.html">&lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th style=&quot;text-align: left&quot;&gt;Software Engineer Internship&lt;/th&gt;
@@ -37,10 +33,11 @@
   &lt;li&gt;Implemented web design with &lt;strong&gt;&lt;em&gt;HTML, CSS and Bootstrap&lt;/em&gt;&lt;/strong&gt; for different components with proper data binding.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The orders page:
-&lt;img src=&quot;/images/dashboard-mangata/orders.png&quot; alt=&quot;&quot; /&gt;
-The products page: 
+&lt;p&gt;The products page: 
 &lt;img src=&quot;/images/dashboard-mangata/products.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The orders page:
+&lt;img src=&quot;/images/dashboard-mangata/orders.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;backend-aws-services&quot;&gt;Backend AWS Services:&lt;/h3&gt;
 &lt;ul&gt;
@@ -49,32 +46,202 @@ The products page:
   &lt;li&gt;Designed &lt;strong&gt;RESTful&lt;/strong&gt; APIs under designed parameter and data requirements on &lt;strong&gt;API Gateway&lt;/strong&gt;, connected APIs with corresponding Lambda functions, and integrated API Gateway SDK to AngularJS.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;The APIs that were documented on Swagger.io and implemented on API Gateway:&lt;/p&gt;
-&lt;div style=&quot;text-align:center;&quot;&gt;
-	&lt;img src=&quot;/images/dashboard-mangata/APIs.png&quot; style=&quot;width:70%;display:inline-block;&quot; /&gt;
+&lt;p&gt;The AWS service basic structureand designed API:&lt;/p&gt;
+&lt;div class=&quot;dashdiv&quot; style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/images/dashboard-mangata/diagram.png&quot; style=&quot;width:55%;display:inline-block;&quot; /&gt;
+	&lt;img src=&quot;/images/dashboard-mangata/APIs.png&quot; style=&quot;width:55%;display:inline-block;&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;The AWS service structure: 
-&lt;img src=&quot;/images/dashboard-mangata/diagram.png&quot; /&gt;&lt;/p&gt;
+&lt;style&gt;
+.dashdiv{
+    padding:0;
+}
+.dashdiv img{
+    margin:0;
+}
 
-&lt;script src=&quot;/assets/js/jquery.photoset-grid.js&quot;&gt;&lt;/script&gt;
+&lt;/style&gt;
 
-&lt;script type=&quot;text/javascript&quot;&gt;
-    $('.photoset-grid-custom').photosetGrid({
-    // Set the gutter between columns and rows
-    gutter: '5px',
-  
-    // Wrap the images in links
-    highresLinks: true,
-  
-    // Asign a common rel attribute
-    rel: 'print-gallery',
+&lt;!-- 
+The AWS service structure: 
+&lt;img src=&quot;/images/dashboard-mangata/diagram.png&quot;&gt; --&gt;</content><author><name></name></author><summary type="html">Software Engineer Internship Mangata Inc. Jun. 2017 – Aug. 2017       Referenced By:    </summary></entry><entry><title type="html">Eatit</title><link href="http://localhost:4000/2017-01-03/eatit.html" rel="alternate" type="text/html" title="Eatit" /><published>2017-01-03T00:00:00-05:00</published><updated>2017-01-03T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-03/eatit</id><content type="html" xml:base="http://localhost:4000/2017-01-03/eatit.html">&lt;style&gt;
+div .eatit {
+	width:80%;
+	display:inline-block;
+	margin:10px;
+	/*border:1px solid grey;*/
+}
+&lt;/style&gt;
 
-    onInit: function(){},
-    
-    onComplete: function(){
-        // Show the grid after it renders
-        $('.photoset-grid-custom').attr('style', '');
-    }
-});
-&lt;/script&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;Built a web app which enables users to search restaurants nearby, and get recommendations according to their favorite records.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Developed a web user interface (&lt;em&gt;HTML5/CSS/JS&lt;/em&gt;) with page views of Nearby, Favorite, &amp;amp; Recommendation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/login.png&quot; /&gt;
+	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/nearby.png&quot; /&gt;
+	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/fav.png&quot; /&gt;
+	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/recommendation.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Created Java servlet &lt;em&gt;RESTful&lt;/em&gt; APIs under &lt;strong&gt;Apache Tomcat&lt;/strong&gt; software to listen &amp;amp; respond to HTTP requests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;@WebServlet&lt;/span&gt;(&lt;span class=&quot;s1&quot;&gt;&quot;/restaurants&quot;&lt;/span&gt;)
+public class SearchRestaurants extends HttpServlet {}
+
+&lt;span class=&quot;k&quot;&gt;@WebServlet&lt;/span&gt;(&lt;span class=&quot;s1&quot;&gt;&quot;/favorite&quot;&lt;/span&gt;)
+public class FavRecords extends HttpServlet {}
+
+&lt;span class=&quot;k&quot;&gt;@WebServlet&lt;/span&gt;(&lt;span class=&quot;s1&quot;&gt;&quot;/recommendation&quot;&lt;/span&gt;)
+public class RecommendRestaurants extends HttpServlet {}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Built database services (Relational/Nosql &lt;strong&gt;MySQL/MongoDB&lt;/strong&gt;) to store restaurant/user/favorite records.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Implemented restaurant geo-search function through &lt;strong&gt;Yelp API&lt;/strong&gt; and stored the returned data into databases.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Deployed the service on AWS EC2, enabling a 200 requests/sec performance tested in &lt;strong&gt;Apache JMeter&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tested test cases in JUnit and completed &lt;strong&gt;Elastic Search/Logstash/Kibana&lt;/strong&gt; log analysis.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">VideoStyle</title><link href="http://localhost:4000/2017-01-02/videostyle.html" rel="alternate" type="text/html" title="VideoStyle" /><published>2017-01-02T00:00:00-05:00</published><updated>2017-01-02T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-02/videostyle</id><content type="html" xml:base="http://localhost:4000/2017-01-02/videostyle.html">&lt;style&gt;
+div .videostyle {
+	width:80%;
+	display:inline-block;
+	margin:15px;
+}
+&lt;/style&gt;
+
+&lt;p&gt;&lt;strong&gt;Designed for users to stylize their videos into their favored types, and offers users an interface to upload their videos and get stylized videos.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Designed the index web page(HTML5/CSS/JavaScript) for a user to upload video, enter email address, &amp;amp; choose the preferred style and show page for user to view/download/share the processed video.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;img class=&quot;videostyle&quot; src=&quot;/images/videostyle/home.png&quot; /&gt;
+	&lt;img class=&quot;videostyle&quot; src=&quot;/images/videostyle/input.png&quot; /&gt;
+	&lt;img class=&quot;videostyle&quot; src=&quot;/images/videostyle/result.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fulfilled video type, email input, &amp;amp; empty checkings to ensure the correctness of data submitted to backend.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Created a backend server with Python Flask that implemented routing for indexing &amp;amp; showing page, and receiving the video &amp;amp; info data sent from the user.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+#index page 
+@application.route(&lt;span class=&quot;s1&quot;&gt;'/'&lt;/span&gt;, methods=[&lt;span class=&quot;s1&quot;&gt;'GET'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'POST'&lt;/span&gt;])
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt;():
+	if request.method == &lt;span class=&quot;s1&quot;&gt;'POST'&lt;/span&gt;:
+		file.save(filepath)
+		upload_file(bucket_name,filepath,filename_time)
+		send_msg(queue_name=queue_name,email=email,style=style,image=filename_time)
+	return render_template(&lt;span class=&quot;s1&quot;&gt;'index.html'&lt;/span&gt;)
+
+#show processed video
+@application.route(&lt;span class=&quot;s1&quot;&gt;'/show_result'&lt;/span&gt;, methods=[&lt;span class=&quot;s1&quot;&gt;'GET'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'POST'&lt;/span&gt;])
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show_result&lt;/span&gt;():
+	return render_template(&lt;span class=&quot;s1&quot;&gt;'show.html'&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Used AWS APIs to store the uploaded videos to S3 and send processing tasks to SQS.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Implemented the API for receiving SNS notification when video has been processed, creating new web address for user to fetch processed video and sending the address to the registered email.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+#used to receive sns
+@application.route(&lt;span class=&quot;s1&quot;&gt;'/notification'&lt;/span&gt;, methods=[&lt;span class=&quot;s1&quot;&gt;'GET'&lt;/span&gt;, &lt;span class=&quot;s1&quot;&gt;'POST'&lt;/span&gt;])
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;sns&lt;/span&gt;():
+	download_file(bucket_name,s3img,local_location)
+	send_link_to_user(user_email, url)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">PostNearby</title><link href="http://localhost:4000/2017-01-01/postnearby.html" rel="alternate" type="text/html" title="PostNearby" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-01/postnearby</id><content type="html" xml:base="http://localhost:4000/2017-01-01/postnearby.html">&lt;style&gt;
+div .postnearby {
+	width:35%;
+	display:inline-block;
+	margin:30px;
+	border:1px solid grey;
+	margin-top: 0px;
+}
+&lt;/style&gt;
+
+&lt;p&gt;&lt;strong&gt;PostNeaby is an iOS app where you can post anything on the system and also search posts around you.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Built an &lt;strong&gt;iOS app&lt;/strong&gt; for users to send posts in their location and search other user’s posts on the map.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the home page, the user can scan the posts from others’ posts around. Click one record, the user can see the detail of that post. The user can also do post from home page. In the explore page, the user can search posts around in the map and have the access to see the detail if he/she hit the markers on the map.&lt;/p&gt;
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;img class=&quot;postnearby&quot; src=&quot;/images/postnearby/home.png&quot; /&gt;
+	&lt;img class=&quot;postnearby&quot; src=&quot;/images/postnearby/search2.png&quot; /&gt;
+	&lt;img class=&quot;postnearby&quot; src=&quot;/images/postnearby/post.png&quot; /&gt;
+	&lt;img class=&quot;postnearby&quot; src=&quot;/images/postnearby/detail.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Created a backend server using &lt;strong&gt;Go&lt;/strong&gt; in scalable &lt;strong&gt;Google App Engine&lt;/strong&gt; to handle user’s post/search operations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;handlerSearch&lt;/span&gt;(w &lt;span class=&quot;nb&quot;&gt;http.ResponseWriter&lt;/span&gt;, r &lt;span class=&quot;nb&quot;&gt;*http.Request&lt;/span&gt;) {}
+&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;handlerPost&lt;/span&gt;(w &lt;span class=&quot;nb&quot;&gt;http.ResponseWriter&lt;/span&gt;, r &lt;span class=&quot;nb&quot;&gt;*http.Request&lt;/span&gt;) {}
+&lt;span class=&quot;k&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;() {
+	&lt;span class=&quot;nb&quot;&gt;http.HandleFunc&lt;/span&gt;(&quot;/post&quot;, handlerPost)
+	&lt;span class=&quot;nb&quot;&gt;http.HandleFunc&lt;/span&gt;(&quot;/search&quot;, handlerSearch)
+	&lt;span class=&quot;nb&quot;&gt;log.Fatal&lt;/span&gt;(http.ListenAndServe(&quot;:8080&quot;, nil))
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Implemented the geo-search functionality through the service of a &lt;strong&gt;Elastic Search&lt;/strong&gt; endpoint in EC2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+//search function:
+&lt;span class=&quot;m&quot;&gt;searchResult&lt;/span&gt;, err := &lt;span class=&quot;nb&quot;&gt;es_client&lt;/span&gt;.&lt;span class=&quot;k&quot;&gt;Search&lt;/span&gt;().
+	&lt;span class=&quot;nb&quot;&gt;Index&lt;/span&gt;(INDEX).
+	&lt;span class=&quot;nb&quot;&gt;Query&lt;/span&gt;(query).
+	&lt;span class=&quot;nb&quot;&gt;Pretty&lt;/span&gt;(true).
+	&lt;span class=&quot;nb&quot;&gt;Do&lt;/span&gt;()
+
+//insert function:
+&lt;span class=&quot;m&quot;&gt;_&lt;/span&gt;, err = &lt;span class=&quot;nb&quot;&gt;es_client&lt;/span&gt;.Index().
+	&lt;span class=&quot;nb&quot;&gt;Index&lt;/span&gt;(INDEX).
+	&lt;span class=&quot;nb&quot;&gt;Type&lt;/span&gt;(TYPE).
+	&lt;span class=&quot;nb&quot;&gt;Id&lt;/span&gt;(id).
+	&lt;span class=&quot;nb&quot;&gt;BodyJson&lt;/span&gt;(p).
+	&lt;span class=&quot;nb&quot;&gt;Refresh&lt;/span&gt;(true).
+	&lt;span class=&quot;nb&quot;&gt;Do&lt;/span&gt;()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;Utilized &lt;strong&gt;Google Dataflow&lt;/strong&gt; to dump user posts from &lt;strong&gt;BigTable&lt;/strong&gt; to &lt;strong&gt;BigQuery&lt;/strong&gt; for content analysis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;m&quot;&gt;Pipeline&lt;/span&gt; p = Pipeline.&lt;span class=&quot;k&quot;&gt;create&lt;/span&gt;(options);
+
+&lt;span class=&quot;m&quot;&gt;PCollection&lt;/span&gt;&amp;lt;Result&amp;gt; btRows = p.&lt;span class=&quot;k&quot;&gt;apply&lt;/span&gt;(Read.from(CloudBigtableIO.read(config)));
+
+&lt;span class=&quot;m&quot;&gt;PCollection&lt;/span&gt;&amp;lt;TableRow&amp;gt; bqRows = btRows.&lt;span class=&quot;k&quot;&gt;apply&lt;/span&gt;(ParDo.of());
+
+bqRows.&lt;span class=&quot;k&quot;&gt;apply&lt;/span&gt;(BigQueryIO.Write());
+
+p.&lt;span class=&quot;k&quot;&gt;run&lt;/span&gt;();
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;img class=&quot;postnearby&quot; src=&quot;/images/postnearby/dataflow.png&quot; /&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>

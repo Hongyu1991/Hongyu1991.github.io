@@ -3,10 +3,10 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
-
+   
 <head>
     <meta charset="utf-8">
-<title>Archives &#8211; Chester's Homepage</title>
+<title>Dashboard for Mangata &#8211; Chester's Homepage</title>
 <meta name="description" content="Something...">
 
 
@@ -20,16 +20,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Archives">
+<meta property="og:title" content="Dashboard for Mangata">
 <meta property="og:description" content="Something...">
-<meta property="og:url" content="http://localhost:4000/archives/">
+<meta property="og:url" content="http://localhost:4000/dashboard-for-mangata">
 <meta property="og:site_name" content="Chester's Homepage">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/archives/">
+<link rel="canonical" href="http://localhost:4000/dashboard-for-mangata">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Chester's Homepage Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -75,71 +75,84 @@
 <!-- BODY -->
 <body id="post-index">
     <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
-
-    <!-- MAIN -->
+    
     <div id="main" role="main">
-      <article>
-    <h1 class="entry-title">
-        <a>Archives</a>
-    </h1>
-    <hr>
-</article>
+        <article class="hentry">
+            
+            <!-- MAIN -->
+            <h1 class="entry-title">
+                <a>Dashboard for Mangata</a>
+            </h1>
+                
+            <!-- POST CONTENT -->
+            <div class="entry-content">
+                | Software Engineer Internship | Mangata Inc. | Jun. 2017 – Aug. 2017|
+| :------------- |:-------------:| -----:|
+||||
+| Referenced By: ||| 
+
+- CEO Andrei Papancea: <andrei@mangata.io>
+- Co-Founder Vlad Papancea: <vlad@mangata.io>
+
+#### Worked on a team to build a platform to manage products, orders and gift sending policies. Build the FrontEnd, BackEnd and Databases for the platform.
+
+### Frontend Framework:
+* Structured Components, Services and Routing Module for dashboard platform using **AngularJS 2**, hosting on S3.
+* Implemented web design with ***HTML, CSS and Bootstrap*** for different components with proper data binding. 
 
 
+The products page: 
+![](/images/dashboard-mangata/products.png)
+
+The orders page:
+![](/images/dashboard-mangata/orders.png)
+
+### Backend AWS Services: 
+* Created **DynamoDB** databases for products and orders and **Elasticsearch** endpoint for search service. 
+* Implemented **Lambda** functions: Create/Read/Update/Delete operations on databases; Post/Delete(DBs triggered) and Filter operations on Elasticsearch. 
+* Designed **RESTful** APIs under designed parameter and data requirements on **API Gateway**, connected APIs with corresponding Lambda functions, and integrated API Gateway SDK to AngularJS. 
+
+The AWS service basic structureand designed API:
+<div class="dashdiv" style="text-align:center;">
+    <img src="/images/dashboard-mangata/diagram.png" style="width:55%;display:inline-block;">
+	<img src="/images/dashboard-mangata/APIs.png" style="width:55%;display:inline-block;">
+</div>
+
+<style>
+.dashdiv{
+    padding:0;
+}
+.dashdiv img{
+    margin:0;
+}
+
+</style>
+<!-- 
+The AWS service structure: 
+<img src="/images/dashboard-mangata/diagram.png"> -->
+
+            </div>  
+
+            <!--- DIVIDING LINE -->
+            <hr>
     
-    
-
-    
-    <article>
-        <h1 style="color:black;" class="entry-title">2017</h1>
-      
-        <ul>
-        
-
-        <li class="entry-title"><a href="http://localhost:4000/2017-01-04/dashboard.html" title="Dashboard for Mangata">Dashboard for Mangata</a></li>
-
-        
-        
-    
-
-    
-    
-
-    
-
-        <li class="entry-title"><a href="http://localhost:4000/2017-01-03/eatit.html" title="Eatit">Eatit</a></li>
-
-        
-        
-    
-
-    
-    
-
-    
-
-        <li class="entry-title"><a href="http://localhost:4000/2017-01-02/videostyle.html" title="VideoStyle">VideoStyle</a></li>
-
-        
-        
-    
-
-    
-    
-
-    
-
-        <li class="entry-title"><a href="http://localhost:4000/2017-01-01/postnearby.html" title="PostNearby">PostNearby</a></li>
-
-        
-        </ul>
-        
-    </article>
-    
-
-    </div>       
+            <!-- POST TAGS -->
+            <div class="inline-tags">
+                <span>
+                    
+                </span>
+            </div>
+          
+            <br>
+            
+            <!-- POST DATE -->
+            <div class="post-date">
+                OCTOBER 14, 2017 -->
+            </div>
+        </article>
+    </div>
 </body>
-
+    
 <!-- FOOTER -->  
 <footer>  
     <div class="footer-wrapper">
@@ -152,5 +165,5 @@
 
         </footer>
     </div>   
-</footer>
+</footer>  
 </html>

@@ -3,10 +3,10 @@
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
 <!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
-
+   
 <head>
     <meta charset="utf-8">
-<title>Archives &#8211; Chester's Homepage</title>
+<title>Eatit &#8211; Chester's Homepage</title>
 <meta name="description" content="Something...">
 
 
@@ -20,16 +20,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Archives">
+<meta property="og:title" content="Eatit">
 <meta property="og:description" content="Something...">
-<meta property="og:url" content="http://localhost:4000/archives/">
+<meta property="og:url" content="http://localhost:4000/eatit">
 <meta property="og:site_name" content="Chester's Homepage">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/archives/">
+<link rel="canonical" href="http://localhost:4000/eatit">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Chester's Homepage Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -75,71 +75,80 @@
 <!-- BODY -->
 <body id="post-index">
     <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
-
-    <!-- MAIN -->
+    
     <div id="main" role="main">
-      <article>
-    <h1 class="entry-title">
-        <a>Archives</a>
-    </h1>
-    <hr>
-</article>
+        <article class="hentry">
+            
+            <!-- MAIN -->
+            <h1 class="entry-title">
+                <a>Eatit</a>
+            </h1>
+                
+            <!-- POST CONTENT -->
+            <div class="entry-content">
+                <style>
+div .eatit {
+	width:80%;
+	display:inline-block;
+	margin:10px;
+	/*border:1px solid grey;*/
+}
+</style>
+
+Built a web app which enables users to search restaurants nearby, and get recommendations according to their favorite records.
+
+* Developed a web user interface (*HTML5/CSS/JS*) with page views of Nearby, Favorite, & Recommendation. 
+
+<div style="text-align:center;">
+	<img class="eatit" src="/images/eatit/login.png">
+	<img class="eatit" src="/images/eatit/nearby.png">
+	<img class="eatit" src="/images/eatit/fav.png">
+	<img class="eatit" src="/images/eatit/recommendation.png">
+</div>
+
+* Created Java servlet *RESTful* APIs under **Apache Tomcat** software to listen & respond to HTTP requests. 
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">@WebServlet</span>(<span class="s1">"/restaurants"</span>)
+public class SearchRestaurants extends HttpServlet {}
+
+<span class="k">@WebServlet</span>(<span class="s1">"/favorite"</span>)
+public class FavRecords extends HttpServlet {}
+
+<span class="k">@WebServlet</span>(<span class="s1">"/recommendation"</span>)
+public class RecommendRestaurants extends HttpServlet {}
+</code></pre></div></div>
+
+* Built database services (Relational/Nosql **MySQL/MongoDB**) to store restaurant/user/favorite records. 
+
+* Implemented restaurant geo-search function through **Yelp API** and stored the returned data into databases. 
+
+* Deployed the service on AWS EC2, enabling a 200 requests/sec performance tested in **Apache JMeter**. 
+
+* Tested test cases in JUnit and completed **Elastic Search/Logstash/Kibana** log analysis. 
 
 
+            </div>  
+
+            <!--- DIVIDING LINE -->
+            <hr>
     
-    
-
-    
-    <article>
-        <h1 style="color:black;" class="entry-title">2017</h1>
-      
-        <ul>
-        
-
-        <li class="entry-title"><a href="http://localhost:4000/2017-01-04/dashboard.html" title="Dashboard for Mangata">Dashboard for Mangata</a></li>
-
-        
-        
-    
-
-    
-    
-
-    
-
-        <li class="entry-title"><a href="http://localhost:4000/2017-01-03/eatit.html" title="Eatit">Eatit</a></li>
-
-        
-        
-    
-
-    
-    
-
-    
-
-        <li class="entry-title"><a href="http://localhost:4000/2017-01-02/videostyle.html" title="VideoStyle">VideoStyle</a></li>
-
-        
-        
-    
-
-    
-    
-
-    
-
-        <li class="entry-title"><a href="http://localhost:4000/2017-01-01/postnearby.html" title="PostNearby">PostNearby</a></li>
-
-        
-        </ul>
-        
-    </article>
-    
-
-    </div>       
+            <!-- POST TAGS -->
+            <div class="inline-tags">
+                <span>
+                    
+                </span>
+            </div>
+          
+            <br>
+            
+            <!-- POST DATE -->
+            <div class="post-date">
+                November 14, 2017 -->
+            </div>
+        </article>
+    </div>
 </body>
-
+    
 <!-- FOOTER -->  
 <footer>  
     <div class="footer-wrapper">
@@ -152,5 +161,5 @@
 
         </footer>
     </div>   
-</footer>
+</footer>  
 </html>

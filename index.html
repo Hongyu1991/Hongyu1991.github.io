@@ -15,26 +15,14 @@ info: person-background.md
 
 
 
-<article>
-    <!-- POST TITLE -->
-<!--     <header>
-        <h1 class="entry-title">
-            Intro
-        </h1>
-    </header>
- -->    
-    <!-- POST CONTENT -->
+<!-- <article>
     <div class="entry-content">
         <div>
             <a>370 west 52nd st. 2A</a><br>
             <a>New York, NY 10019</a><br>
             <a>(917) 678-7939</a><br>
             <a href = "mailto: chester.h.yang@gmail.com">chester.h.yang@gmail.com</a>
-
         </div>
-
-
-        <!-- {% include {{page.info}} %} -->
         <p>Dear Hiring Manager,</p>
         <p>
         I’m Chester, a Computer Engineering master student in Columbia University, expected to graduate in December 2017, with a strong programming capability, and systematic software skills in Front-Back-End, Databases and Cloud Services, currently seeking a full time Software Engineer position. 
@@ -58,11 +46,10 @@ info: person-background.md
         Chester Hongyu Yang
         </p>
     </div>
-    
-    <!--- DIVIDING LINE -->
+
     <hr>
 
-</article>
+</article> -->
 
 
 <article>
@@ -100,6 +87,49 @@ info: person-background.md
 {% endfor %}
 
 </article>
+
+
+{% for post in site.posts %}
+
+<article>
+    <!-- POST TITLE -->
+    <header>
+        <h1 class="entry-title">
+            <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>
+        </h1>
+    </header>
+    
+    <!-- POST CONTENT -->
+    <div class="entry-content">
+        {{ post.content }}
+    </div>
+    
+    <!--- DIVIDING LINE -->
+    <hr>
+    
+    <!-- POST TAGS -->
+    <div class="inline-tags">
+        <span>
+        {% for tag in post.tags %}
+            <a href="/tags/#{{tag}}">#{{ tag }}&nbsp;&nbsp;&nbsp;</a>
+        {% endfor %}
+        </span>
+    </div>
+    
+    <br>
+    
+    <!-- POST DATE -->
+    <div class="post-date">
+        <span class="entry-date date published updated">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+                <a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a>
+            </time>
+        </span>
+    </div>
+    
+</article>
+{% endfor %}
+
 
 <!-- <div class="pagination">
     <center>
