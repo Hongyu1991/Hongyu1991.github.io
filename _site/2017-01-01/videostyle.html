@@ -6,7 +6,7 @@
    
 <head>
     <meta charset="utf-8">
-<title>Dashboard for Mangata &#8211; Chester's Homepage</title>
+<title>VideoStyle &#8211; Chester's Homepage</title>
 <meta name="description" content="Something...">
 <meta name="keywords" content="">
 
@@ -20,16 +20,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Dashboard for Mangata">
+<meta property="og:title" content="VideoStyle">
 <meta property="og:description" content="Something...">
-<meta property="og:url" content="http://localhost:4000/2017-01-04/dashboard.html">
+<meta property="og:url" content="http://localhost:4000/2017-01-01/videostyle.html">
 <meta property="og:site_name" content="Chester's Homepage">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/2017-01-04/dashboard.html">
+<link rel="canonical" href="http://localhost:4000/2017-01-01/videostyle.html">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Chester's Homepage Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -81,78 +81,70 @@
             
             <!-- MAIN -->
             <h1 class="entry-title">
-                <a>Dashboard for Mangata</a>
+                <a>VideoStyle</a>
             </h1>
                 
             <!-- POST CONTENT -->
             <div class="entry-content">
-                <table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Software Engineer Internship</th>
-      <th style="text-align: center">Mangata Inc.</th>
-      <th style="text-align: right">Jun. 2017 – Aug. 2017</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Referenced By:</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-  </tbody>
-</table>
-
-<ul>
-  <li>CEO Andrei Papancea: <a href="mailto:andrei@mangata.io">andrei@mangata.io</a></li>
-  <li>Co-Founder Vlad Papancea: <a href="mailto:vlad@mangata.io">vlad@mangata.io</a></li>
-</ul>
-
-<h4 id="worked-on-a-team-to-build-a-platform-to-manage-products-orders-and-gift-sending-policies-build-the-frontend-backend-and-databases-for-the-platform">Worked on a team to build a platform to manage products, orders and gift sending policies. Build the FrontEnd, BackEnd and Databases for the platform.</h4>
-
-<h3 id="frontend-framework">Frontend Framework:</h3>
-<ul>
-  <li>Structured Components, Services and Routing Module for dashboard platform using <strong>AngularJS 2</strong>, hosting on S3.</li>
-  <li>Implemented web design with <strong><em>HTML, CSS and Bootstrap</em></strong> for different components with proper data binding.</li>
-</ul>
-
-<p>The products page: 
-<img src="/images/dashboard-mangata/products.png" alt="" /></p>
-
-<p>The orders page:
-<img src="/images/dashboard-mangata/orders.png" alt="" /></p>
-
-<h3 id="backend-aws-services">Backend AWS Services:</h3>
-<ul>
-  <li>Created <strong>DynamoDB</strong> databases for products and orders and <strong>Elasticsearch</strong> endpoint for search service.</li>
-  <li>Implemented <strong>Lambda</strong> functions: Create/Read/Update/Delete operations on databases; Post/Delete(DBs triggered) and Filter operations on Elasticsearch.</li>
-  <li>Designed <strong>RESTful</strong> APIs under designed parameter and data requirements on <strong>API Gateway</strong>, connected APIs with corresponding Lambda functions, and integrated API Gateway SDK to AngularJS.</li>
-</ul>
-
-<p>The AWS service basic structureand designed API:</p>
-<div class="dashdiv" style="text-align:center;">
-    <img src="/images/dashboard-mangata/diagram.png" style="width:55%;display:inline-block;" />
-	<img src="/images/dashboard-mangata/APIs.png" style="width:55%;display:inline-block;" />
-</div>
-
-<style>
-.dashdiv{
-    padding:0;
+                <style>
+div .videostyle {
+	width:80%;
+	display:inline-block;
+	margin:15px;
 }
-.dashdiv img{
-    margin:0;
-}
-
 </style>
 
-<!-- 
-The AWS service structure: 
-<img src="/images/dashboard-mangata/diagram.png"> -->
+<p><strong>Designed for users to stylize their videos into their favored types, and offers users an interface to upload their videos and get stylized videos.</strong></p>
+
+<ul>
+  <li>Designed the index web page(HTML5/CSS/JavaScript) for a user to upload video, enter email address, &amp; choose the preferred style and show page for user to view/download/share the processed video.</li>
+</ul>
+<div style="text-align:center;">
+	<img class="videostyle" src="/images/videostyle/home.png" />
+	<img class="videostyle" src="/images/videostyle/input.png" />
+	<img class="videostyle" src="/images/videostyle/result.png" />
+</div>
+
+<ul>
+  <li>
+    <p>Fulfilled video type, email input, &amp; empty checkings to ensure the correctness of data submitted to backend.</p>
+  </li>
+  <li>
+    <p>Created a backend server with Python Flask that implemented routing for indexing &amp; showing page, and receiving the video &amp; info data sent from the user.</p>
+  </li>
+</ul>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+#index page 
+@application.route(<span class="s1">'/'</span>, methods=[<span class="s1">'GET'</span>, <span class="s1">'POST'</span>])
+<span class="k">def</span> <span class="nf">init</span>():
+	if request.method == <span class="s1">'POST'</span>:
+		file.save(filepath)
+		upload_file(bucket_name,filepath,filename_time)
+		send_msg(queue_name=queue_name,email=email,style=style,image=filename_time)
+	return render_template(<span class="s1">'index.html'</span>)
+
+#show processed video
+@application.route(<span class="s1">'/show_result'</span>, methods=[<span class="s1">'GET'</span>, <span class="s1">'POST'</span>])
+<span class="k">def</span> <span class="nf">show_result</span>():
+	return render_template(<span class="s1">'show.html'</span>)
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Used AWS APIs to store the uploaded videos to S3 and send processing tasks to SQS.</p>
+  </li>
+  <li>
+    <p>Implemented the API for receiving SNS notification when video has been processed, creating new web address for user to fetch processed video and sending the address to the registered email.</p>
+  </li>
+</ul>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+#used to receive sns
+@application.route(<span class="s1">'/notification'</span>, methods=[<span class="s1">'GET'</span>, <span class="s1">'POST'</span>])
+<span class="k">def</span> <span class="nf">sns</span>():
+	download_file(bucket_name,s3img,local_location)
+	send_link_to_user(user_email, url)
+</code></pre></div></div>
+
 
             </div>  
 
@@ -170,7 +162,7 @@ The AWS service structure:
             
             <!-- POST DATE -->
             <div class="post-date">
-                OCTOBER 14, 2017 -->
+                November 14, 2017 -->
             </div>
         </article>
     </div>

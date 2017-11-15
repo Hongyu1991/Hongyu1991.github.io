@@ -1,119 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-15T02:22:14-05:00</updated><id>http://localhost:4000/</id><title type="html">Chester’s Homepage</title><subtitle>Something...</subtitle><entry><title type="html">Dashboard for Mangata</title><link href="http://localhost:4000/2017-01-04/dashboard.html" rel="alternate" type="text/html" title="Dashboard for Mangata" /><published>2017-01-04T00:00:00-05:00</published><updated>2017-01-04T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-04/dashboard</id><content type="html" xml:base="http://localhost:4000/2017-01-04/dashboard.html">&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: left&quot;&gt;Software Engineer Internship&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Mangata Inc.&lt;/th&gt;
-      &lt;th style=&quot;text-align: right&quot;&gt;Jun. 2017 – Aug. 2017&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: left&quot;&gt;Referenced By:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
-      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;CEO Andrei Papancea: &lt;a href=&quot;mailto:andrei@mangata.io&quot;&gt;andrei@mangata.io&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Co-Founder Vlad Papancea: &lt;a href=&quot;mailto:vlad@mangata.io&quot;&gt;vlad@mangata.io&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;worked-on-a-team-to-build-a-platform-to-manage-products-orders-and-gift-sending-policies-build-the-frontend-backend-and-databases-for-the-platform&quot;&gt;Worked on a team to build a platform to manage products, orders and gift sending policies. Build the FrontEnd, BackEnd and Databases for the platform.&lt;/h4&gt;
-
-&lt;h3 id=&quot;frontend-framework&quot;&gt;Frontend Framework:&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Structured Components, Services and Routing Module for dashboard platform using &lt;strong&gt;AngularJS 2&lt;/strong&gt;, hosting on S3.&lt;/li&gt;
-  &lt;li&gt;Implemented web design with &lt;strong&gt;&lt;em&gt;HTML, CSS and Bootstrap&lt;/em&gt;&lt;/strong&gt; for different components with proper data binding.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The products page: 
-&lt;img src=&quot;/images/dashboard-mangata/products.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The orders page:
-&lt;img src=&quot;/images/dashboard-mangata/orders.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;backend-aws-services&quot;&gt;Backend AWS Services:&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Created &lt;strong&gt;DynamoDB&lt;/strong&gt; databases for products and orders and &lt;strong&gt;Elasticsearch&lt;/strong&gt; endpoint for search service.&lt;/li&gt;
-  &lt;li&gt;Implemented &lt;strong&gt;Lambda&lt;/strong&gt; functions: Create/Read/Update/Delete operations on databases; Post/Delete(DBs triggered) and Filter operations on Elasticsearch.&lt;/li&gt;
-  &lt;li&gt;Designed &lt;strong&gt;RESTful&lt;/strong&gt; APIs under designed parameter and data requirements on &lt;strong&gt;API Gateway&lt;/strong&gt;, connected APIs with corresponding Lambda functions, and integrated API Gateway SDK to AngularJS.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The AWS service basic structureand designed API:&lt;/p&gt;
-&lt;div class=&quot;dashdiv&quot; style=&quot;text-align:center;&quot;&gt;
-    &lt;img src=&quot;/images/dashboard-mangata/diagram.png&quot; style=&quot;width:55%;display:inline-block;&quot; /&gt;
-	&lt;img src=&quot;/images/dashboard-mangata/APIs.png&quot; style=&quot;width:55%;display:inline-block;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;style&gt;
-.dashdiv{
-    padding:0;
-}
-.dashdiv img{
-    margin:0;
-}
-
-&lt;/style&gt;
-
-&lt;!-- 
-The AWS service structure: 
-&lt;img src=&quot;/images/dashboard-mangata/diagram.png&quot;&gt; --&gt;</content><author><name></name></author><summary type="html">Software Engineer Internship Mangata Inc. Jun. 2017 – Aug. 2017       Referenced By:    </summary></entry><entry><title type="html">Eatit</title><link href="http://localhost:4000/2017-01-03/eatit.html" rel="alternate" type="text/html" title="Eatit" /><published>2017-01-03T00:00:00-05:00</published><updated>2017-01-03T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-03/eatit</id><content type="html" xml:base="http://localhost:4000/2017-01-03/eatit.html">&lt;style&gt;
-div .eatit {
-	width:80%;
-	display:inline-block;
-	margin:10px;
-	/*border:1px solid grey;*/
-}
-&lt;/style&gt;
-
-&lt;p&gt;Built a web app which enables users to search restaurants nearby, and get recommendations according to their favorite records.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Developed a web user interface (&lt;em&gt;HTML5/CSS/JS&lt;/em&gt;) with page views of Nearby, Favorite, &amp;amp; Recommendation.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div style=&quot;text-align:center;&quot;&gt;
-	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/login.png&quot; /&gt;
-	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/nearby.png&quot; /&gt;
-	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/fav.png&quot; /&gt;
-	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/recommendation.png&quot; /&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Created Java servlet &lt;em&gt;RESTful&lt;/em&gt; APIs under &lt;strong&gt;Apache Tomcat&lt;/strong&gt; software to listen &amp;amp; respond to HTTP requests.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;k&quot;&gt;@WebServlet&lt;/span&gt;(&lt;span class=&quot;s1&quot;&gt;&quot;/restaurants&quot;&lt;/span&gt;)
-public class SearchRestaurants extends HttpServlet {}
-
-&lt;span class=&quot;k&quot;&gt;@WebServlet&lt;/span&gt;(&lt;span class=&quot;s1&quot;&gt;&quot;/favorite&quot;&lt;/span&gt;)
-public class FavRecords extends HttpServlet {}
-
-&lt;span class=&quot;k&quot;&gt;@WebServlet&lt;/span&gt;(&lt;span class=&quot;s1&quot;&gt;&quot;/recommendation&quot;&lt;/span&gt;)
-public class RecommendRestaurants extends HttpServlet {}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;Built database services (Relational/Nosql &lt;strong&gt;MySQL/MongoDB&lt;/strong&gt;) to store restaurant/user/favorite records.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Implemented restaurant geo-search function through &lt;strong&gt;Yelp API&lt;/strong&gt; and stored the returned data into databases.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Deployed the service on AWS EC2, enabling a 200 requests/sec performance tested in &lt;strong&gt;Apache JMeter&lt;/strong&gt;.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Tested test cases in JUnit and completed &lt;strong&gt;Elastic Search/Logstash/Kibana&lt;/strong&gt; log analysis.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">VideoStyle</title><link href="http://localhost:4000/2017-01-02/videostyle.html" rel="alternate" type="text/html" title="VideoStyle" /><published>2017-01-02T00:00:00-05:00</published><updated>2017-01-02T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-02/videostyle</id><content type="html" xml:base="http://localhost:4000/2017-01-02/videostyle.html">&lt;style&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-11-15T02:31:12-05:00</updated><id>http://localhost:4000/</id><title type="html">Chester’s Homepage</title><subtitle>Something...</subtitle><entry><title type="html">VideoStyle</title><link href="http://localhost:4000/2017-01-01/videostyle.html" rel="alternate" type="text/html" title="VideoStyle" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-01/videostyle</id><content type="html" xml:base="http://localhost:4000/2017-01-01/videostyle.html">&lt;style&gt;
 div .videostyle {
 	width:80%;
 	display:inline-block;
@@ -244,4 +129,119 @@ p.&lt;span class=&quot;k&quot;&gt;run&lt;/span&gt;();
 
 &lt;div style=&quot;text-align:center;&quot;&gt;
 	&lt;img class=&quot;postnearby&quot; src=&quot;/images/postnearby/dataflow.png&quot; /&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Eatit</title><link href="http://localhost:4000/2017-01-01/eatit.html" rel="alternate" type="text/html" title="Eatit" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-01/eatit</id><content type="html" xml:base="http://localhost:4000/2017-01-01/eatit.html">&lt;style&gt;
+div .eatit {
+	width:80%;
+	display:inline-block;
+	margin:10px;
+	/*border:1px solid grey;*/
+}
+&lt;/style&gt;
+
+&lt;p&gt;Built a web app which enables users to search restaurants nearby, and get recommendations according to their favorite records.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Developed a web user interface (&lt;em&gt;HTML5/CSS/JS&lt;/em&gt;) with page views of Nearby, Favorite, &amp;amp; Recommendation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&quot;text-align:center;&quot;&gt;
+	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/login.png&quot; /&gt;
+	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/nearby.png&quot; /&gt;
+	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/fav.png&quot; /&gt;
+	&lt;img class=&quot;eatit&quot; src=&quot;/images/eatit/recommendation.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Created Java servlet &lt;em&gt;RESTful&lt;/em&gt; APIs under &lt;strong&gt;Apache Tomcat&lt;/strong&gt; software to listen &amp;amp; respond to HTTP requests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;@WebServlet&lt;/span&gt;(&lt;span class=&quot;s1&quot;&gt;&quot;/restaurants&quot;&lt;/span&gt;)
+public class SearchRestaurants extends HttpServlet {}
+
+&lt;span class=&quot;k&quot;&gt;@WebServlet&lt;/span&gt;(&lt;span class=&quot;s1&quot;&gt;&quot;/favorite&quot;&lt;/span&gt;)
+public class FavRecords extends HttpServlet {}
+
+&lt;span class=&quot;k&quot;&gt;@WebServlet&lt;/span&gt;(&lt;span class=&quot;s1&quot;&gt;&quot;/recommendation&quot;&lt;/span&gt;)
+public class RecommendRestaurants extends HttpServlet {}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Built database services (Relational/Nosql &lt;strong&gt;MySQL/MongoDB&lt;/strong&gt;) to store restaurant/user/favorite records.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Implemented restaurant geo-search function through &lt;strong&gt;Yelp API&lt;/strong&gt; and stored the returned data into databases.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Deployed the service on AWS EC2, enabling a 200 requests/sec performance tested in &lt;strong&gt;Apache JMeter&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Tested test cases in JUnit and completed &lt;strong&gt;Elastic Search/Logstash/Kibana&lt;/strong&gt; log analysis.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Dashboard for Mangata</title><link href="http://localhost:4000/2017-01-01/dashboard.html" rel="alternate" type="text/html" title="Dashboard for Mangata" /><published>2017-01-01T00:00:00-05:00</published><updated>2017-01-01T00:00:00-05:00</updated><id>http://localhost:4000/2017-01-01/dashboard</id><content type="html" xml:base="http://localhost:4000/2017-01-01/dashboard.html">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: left&quot;&gt;Software Engineer Internship&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Mangata Inc.&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Jun. 2017 – Aug. 2017&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: left&quot;&gt;Referenced By:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt; &lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CEO Andrei Papancea: &lt;a href=&quot;mailto:andrei@mangata.io&quot;&gt;andrei@mangata.io&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Co-Founder Vlad Papancea: &lt;a href=&quot;mailto:vlad@mangata.io&quot;&gt;vlad@mangata.io&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;worked-on-a-team-to-build-a-platform-to-manage-products-orders-and-gift-sending-policies-build-the-frontend-backend-and-databases-for-the-platform&quot;&gt;Worked on a team to build a platform to manage products, orders and gift sending policies. Build the FrontEnd, BackEnd and Databases for the platform.&lt;/h4&gt;
+
+&lt;h3 id=&quot;frontend-framework&quot;&gt;Frontend Framework:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Structured Components, Services and Routing Module for dashboard platform using &lt;strong&gt;AngularJS 2&lt;/strong&gt;, hosting on S3.&lt;/li&gt;
+  &lt;li&gt;Implemented web design with &lt;strong&gt;&lt;em&gt;HTML, CSS and Bootstrap&lt;/em&gt;&lt;/strong&gt; for different components with proper data binding.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The products page: 
+&lt;img src=&quot;/images/dashboard-mangata/products.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The orders page:
+&lt;img src=&quot;/images/dashboard-mangata/orders.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;backend-aws-services&quot;&gt;Backend AWS Services:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Created &lt;strong&gt;DynamoDB&lt;/strong&gt; databases for products and orders and &lt;strong&gt;Elasticsearch&lt;/strong&gt; endpoint for search service.&lt;/li&gt;
+  &lt;li&gt;Implemented &lt;strong&gt;Lambda&lt;/strong&gt; functions: Create/Read/Update/Delete operations on databases; Post/Delete(DBs triggered) and Filter operations on Elasticsearch.&lt;/li&gt;
+  &lt;li&gt;Designed &lt;strong&gt;RESTful&lt;/strong&gt; APIs under designed parameter and data requirements on &lt;strong&gt;API Gateway&lt;/strong&gt;, connected APIs with corresponding Lambda functions, and integrated API Gateway SDK to AngularJS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The AWS service basic structureand designed API:&lt;/p&gt;
+&lt;div class=&quot;dashdiv&quot; style=&quot;text-align:center;&quot;&gt;
+    &lt;img src=&quot;/images/dashboard-mangata/diagram.png&quot; style=&quot;width:55%;display:inline-block;&quot; /&gt;
+	&lt;img src=&quot;/images/dashboard-mangata/APIs.png&quot; style=&quot;width:55%;display:inline-block;&quot; /&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+.dashdiv{
+    padding:0;
+}
+.dashdiv img{
+    margin:0;
+}
+
+&lt;/style&gt;
+
+&lt;!-- 
+The AWS service structure: 
+&lt;img src=&quot;/images/dashboard-mangata/diagram.png&quot;&gt; --&gt;</content><author><name></name></author><summary type="html">Software Engineer Internship Mangata Inc. Jun. 2017 – Aug. 2017       Referenced By:    </summary></entry></feed>
